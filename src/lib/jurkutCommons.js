@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import NextLink from 'next/link';
 
-const BASE_URL = 'http://jurkut.vercel.app/';
+const BASE_URL = 'http://alurakut.vercel.app/';
 const v = '1';
 
 
@@ -24,7 +24,7 @@ export function JurkutMenu({ githubUser }) {
   return (
     <JurkutMenu.Wrapper isMenuOpen={isMenuOpen}>
       <div className="container">
-        <Jurkut.Logo src={`${BASE_URL}/logo.svg`} />
+        <JurkutMenu.Logo src={`https://fontmeme.com/permalink/210715/871fb11145af0b7171313247be3713bc.png`} />
 
         <nav style={{ flex: 1 }}>
           {[{ name: 'Inicio', slug: '/'}, {name: 'Amigos', slug: '/amigos'}, {name: 'Comunidades', slug: '/comunidades'}].map((menuItem) => (
@@ -54,7 +54,7 @@ export function JurkutMenu({ githubUser }) {
 }
 JurkutMenu.Wrapper = styled.header`
   width: 100%;
-  background-color: #308BC5;
+  background-color: #FFAEBC;
 
   .jurkutMenuProfileSidebar {
     background: white;
@@ -81,7 +81,7 @@ JurkutMenu.Wrapper = styled.header`
     }
     .boxLink {
       font-size: 18px;
-      color: #2E7BB4;
+      color: #F79489;
       -webkit-text-decoration: none;
       text-decoration: none;
       font-weight: 800;
@@ -91,12 +91,12 @@ JurkutMenu.Wrapper = styled.header`
       margin-top: 12px;
       margin-bottom: 8px;
       border-color: transparent;
-      border-bottom-color: #ECF2FA;
+      border-bottom-color: #F9F1F0;
     }
   }
 
   .container {
-    background-color: #308BC5;
+    background-color: #FFAEBC;
     padding: 7px 16px;
     max-width: 1110px;
     margin: auto;
@@ -131,7 +131,7 @@ JurkutMenu.Wrapper = styled.header`
         text-decoration: none;
         &:after {
           content: " ";
-          background-color: #5292C1;
+          background-color: #FADCD9;
           display: block;
           position: absolute;
           width: 1px;
@@ -145,7 +145,7 @@ JurkutMenu.Wrapper = styled.header`
     }
     input {
       color: #ffffff;
-      background: #5579A1;
+      background: #fcccd4;
       padding: 10px 42px;
       border: 0;
       background-image: url(${`${BASE_URL}/icons/search.svg`});
@@ -227,7 +227,7 @@ export function JurkutProfileSidebarMenuDefault() {
 JurkutProfileSidebarMenuDefault.Wrapper = styled.div`
   a {
     font-size: 12px;
-    color: #2E7BB4;
+    color: #F79489;
     margin-bottom: 16px;
     display: flex;
     align-items: center;
@@ -259,7 +259,7 @@ export function OrkutNostalgicIconSet(props) {
             {name}
           </span>
           <span className="OrkutNostalgicIconSet__number" style={{ gridArea: 'number' }}>
-            <img key={`orkut__icon_set__${slug}_img`} className="OrkutNostalgicIconSet__iconSample" src={`https://jurkut.vercel.app/icons/${icon}.svg`} />
+            <img key={`orkut__icon_set__${slug}_img`} className="OrkutNostalgicIconSet__iconSample" src={`https://alurakut.vercel.app/icons/${icon}.svg`} />
             {props[slug] ? props[slug] : 0}
           </span>
         </li>
@@ -278,7 +278,7 @@ export function OrkutNostalgicIconSet(props) {
             <span className="OrkutNostalgicIconSet__iconComplex" className="OrkutNostalgicIconSet__number" style={{ gridArea: 'number' }}>
               {[0, 1, 2].map((_, index) => {
                 const isHeartActive = index <= (total - 1);
-                return <img key={`orkut__icon_set__${slug}_img_${index}`} src={`https://jurkut.vercel.app/icons/${icon}.svg`} style={{ marginRight: '2px', opacity: isHeartActive ? 1 : '0.5' }} />
+                return <img key={`orkut__icon_set__${slug}_img_${index}`} src={`https://alurakut.vercel.app/icons/${icon}.svg`} style={{ marginRight: '2px', opacity: isHeartActive ? 1 : '0.5' }} />
               })}
             </span>
           </li>
@@ -325,14 +325,14 @@ OrkutNostalgicIconSet.List = styled.ul`
 // ================================================================================================================
 const JurkutLoginScreen = css`
   :root {
-    --backgroundPrimary: #D9E6F6;
-    --backgroundSecondary: #F1F9FE;
+    --backgroundPrimary: #FADCD9;
+    --backgroundSecondary: #ffeceb;
     --backgroundTertiary: #FFFFFF;
-    --backgroundQuarternary: #BBCDE8;
-    --colorPrimary: #2E7BB4;
-    --colorSecondary: #388BB0;
+    --backgroundQuarternary: #facac8;
+    --colorPrimary: #F79489;
+    --colorSecondary: #F8AFA6;
     --colorTertiary: #2F4A71;
-    --colorQuarternary: #D81D99;
+    --colorQuarternary: #F79489;
     --textPrimaryColor: #333333;
     --textSecondaryColor: #FFFFFF;
     --textTertiaryColor: #5A5A5A;

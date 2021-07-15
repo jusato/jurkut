@@ -13,11 +13,14 @@ function ProfileSideBar(propriedades) {
 }
 
 export default function Home() {
-  const usuarioAleatorio = 'jusato';
+  const githubUser = 'jusato';
   const pessoasFavoritas = [
-    'peas', 
-    'juunegreiros',
-    'omariosouto'
+    'jusato',
+    'bigarcia',
+    'yasju', 
+    'facebook', 
+    'instagram',
+    'harvard'
   ]
 
   return (
