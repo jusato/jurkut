@@ -10,7 +10,8 @@
 
 **Jurkut** is an Orkut-based web application. It brings a more modern interface and uses better development tools.
 
-_This project was developed during the #ImersãoReactAlura._
+This project was developed during 
+<a href="https://www.alura.com.br/imersao-react"> <img src="https://www.alura.com.br/assets/img/imersoes/imersao-react/logo-imersao-react-header.1623772240.svg" width="100px"></a>
 
 ### Login page
 
